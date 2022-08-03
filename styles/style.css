@@ -19,25 +19,40 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
+    padding: 2rem 0;
+    background-color: green;
+    color: var(--text);
 }
 
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+}
+
+.card h3{
+    font-weight: 400;
+    padding: 1.5rem;
 }
 
 .card-content{
-    padding: 1rem;
+    background-color: var(--bg-card);
+    border-radius: 3rem;
+    width: 18rem;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
+}
+
+.main{
+    position: relative;
+    margin-bottom: 3rem;
 }
 
 .name-user{
     display: flex;
     align-items: center;
     gap: 1rem;
-
+    padding: 1.5rem;
 }
 
 .name-user img{
@@ -47,25 +62,36 @@ main{
     padding: .3rem;
 }
 
+.user{
+    overflow: hidden;
+}
+
 .img-user{
-    height: 20rem;
+    height: 17rem;
     border-radius: 50%;
     border: solid .4rem var(--img-profile);
     position: relative;
-    left: 3rem;
-    object-fit: cover;
+    left: 3.5rem;
 }
 
 .datas{
     display: flex;
     flex-direction: column;
     gap: .2rem;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 2.3rem;
+    position: absolute;
+    bottom: -2.5rem;
+    background-image: linear-gradient(black, transparent, black);
+    margin-left: 1rem;
 }
 
 .data{
     display: flex;
     align-items: center;
     gap: .4rem;
+    overflow: hidden;
 }
 
 .footer{
@@ -73,6 +99,7 @@ main{
     align-items: center;
     justify-content: end;
     gap: 1rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 .footer img{
@@ -80,6 +107,53 @@ main{
 }
 
 .controls{
-    z-index: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
+
+.data-user,
+.customization{
+    border: solid .1rem var(--img-profile);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
+    background-color: var(--bg-card);
+}
+
+.data-user input,
+.data-user button,
+.customization button{
+    border: none;
+    border-radius: .5rem;
+}
+
+.data-user input{
+    padding: .7rem;
+}
+
+.data-user button,
+.customization button{
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.customization button:hover{
+    background-color: var(--img-profile);
+    color: var(--text);
+}
+
+.data-user button:hover{
+    background-color: var(--img-profile);
+    color: var(--text);
+}
+
+@media (min-width: 750px) {}
 
