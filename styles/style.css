@@ -43,6 +43,9 @@ main{
 }
 
 .card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background-color: var(--bg-card);
     border-radius: 3rem;
     width: 18rem;
@@ -116,7 +119,7 @@ main{
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .data-user,
