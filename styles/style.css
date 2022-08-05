@@ -120,7 +120,8 @@ main{
 }
 
 .data-user,
-.customization{
+.customization,
+.download{
     border: solid .1rem var(--img-profile);
     border-radius: 1.5rem;
     padding: 2rem;
@@ -133,7 +134,8 @@ main{
 }
 
 .data-user input,
-.data-user button{
+.data-user button,
+.download button{
     border: none;
     border-radius: .5rem;
 }
@@ -142,7 +144,8 @@ main{
     padding: .7rem;
 }
 
-.data-user button{
+.data-user button,
+.download button{
     padding: .5rem 1rem;
     cursor: pointer;
 }
@@ -157,6 +160,11 @@ main{
 .customization button:hover{
     transform: scale(1.5);
     transition: .5s;
+}
+
+.download button:hover{
+    background-color: var(--img-profile);
+    color: var(--text);
 }
 
 .colors{
