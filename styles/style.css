@@ -12,6 +12,11 @@
     --img-profile: #8257e5;
     --buttons: #FFF;
     --border-button: #1A1A1A;
+
+    --purple: #6959CD;
+    --blue: #6495ED;
+    --pink: #DA70D6;
+    --green: #2E8B57;
 }
 
 body{
@@ -20,8 +25,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    background-color: green;
+    background-color: var(--bg);
     color: var(--text);
+    min-height: 100vh;
 }
 
 main{
@@ -110,8 +116,6 @@ main{
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -125,12 +129,11 @@ main{
     align-items: center;
     gap: 1rem;
     box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
-    background-color: var(--bg-card);
+    background-color: var(--bg);
 }
 
 .data-user input,
-.data-user button,
-.customization button{
+.data-user button{
     border: none;
     border-radius: .5rem;
 }
@@ -139,15 +142,46 @@ main{
     padding: .7rem;
 }
 
-.data-user button,
-.customization button{
+.data-user button{
     padding: .5rem 1rem;
     cursor: pointer;
 }
 
+.customization button{
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
 .customization button:hover{
-    background-color: var(--img-profile);
-    color: var(--text);
+    transform: scale(1.5);
+    transition: .7s;
+}
+
+.colors{
+    display: flex;
+    gap: 1rem;
+}
+
+.pink{
+    background-color: var(--pink);
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.purple{
+    background-color: var(--purple);
+}
+
+.black{
+    background-color: var(--bg-card);
 }
 
 .data-user button:hover{
@@ -155,5 +189,10 @@ main{
     color: var(--text);
 }
 
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    
+    body main{
+        flex-direction: row;
+    }
+}
 
