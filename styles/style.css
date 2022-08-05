@@ -14,9 +14,9 @@
     --border-button: #1A1A1A;
 
     --purple: #483D8B;
-    --blue: #6495ED;
-    --pink: #CD5C5C;
-    --green: #2E8B57;
+    --blue: #3855B3;
+    --pink: #AD53A9 ;
+    --green: #367335;
 }
 
 body{
@@ -54,14 +54,14 @@ main{
     margin-bottom: 3rem;
 }
 
-.name-user{
+.name-user-container{
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
 }
 
-.name-user img{
+.name-user-container img{
     height: 2.5rem;
     border: solid .1rem var(--text);
     border-radius: 50%;
