@@ -13,9 +13,9 @@
     --buttons: #FFF;
     --border-button: #1A1A1A;
 
-    --purple: #6959CD;
+    --purple: #483D8B;
     --blue: #6495ED;
-    --pink: #DA70D6;
+    --pink: #CD5C5C;
     --green: #2E8B57;
 }
 
@@ -156,7 +156,7 @@ main{
 
 .customization button:hover{
     transform: scale(1.5);
-    transition: .7s;
+    transition: .5s;
 }
 
 .colors{
@@ -189,10 +189,16 @@ main{
     color: var(--text);
 }
 
-@media (min-width: 750px) {
-    
+@media (min-width: 750px) {  
     body main{
         flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) {  
+    body main{
+        width: 80%;
+        justify-content: space-around;
     }
 }
 

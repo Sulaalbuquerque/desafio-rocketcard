@@ -7,23 +7,23 @@ const black = document.querySelector('.black')
 const card = document.querySelector('.card-content')
 
 purple.addEventListener('click', () => {
-    card.style.backgroundColor = '#6959CD'
+    card.style.backgroundColor = 'var(--purple)'
 })
 
 blue.addEventListener('click', () => {
-    card.style.backgroundColor = '#6495ED'
+    card.style.backgroundColor = 'var(--blue)'
 })
 
 pink.addEventListener('click', () => {
-    card.style.backgroundColor = '#DA70D6'
+    card.style.backgroundColor = 'var(--pink)'
 })
 
 green.addEventListener('click', () => {
-    card.style.backgroundColor = '#2E8B57'
+    card.style.backgroundColor = 'var(--green)'
 })
 
 black.addEventListener('click', () => {
-    card.style.backgroundColor = '#0E1218'
+    card.style.backgroundColor = 'var(--bg-card)'
 })
 
 
