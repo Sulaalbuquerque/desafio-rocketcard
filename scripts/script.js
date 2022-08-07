@@ -1,19 +1,10 @@
-//github API
-
-const nameUser = document.querySelector('.name-user') 
-const profileImage = document.querySelector('.img-user') 
-
-const followers = document.querySelector('.followers') 
-const following = document.querySelector('.following') 
-const repository = document.querySelector('.repository') 
-const company = document.querySelector('.company') 
-const place = document.querySelector('.location') 
-
 const buttonCard = document.querySelector('.button-card') 
 const input = document.querySelector('.input') 
 const popup = document.querySelector('.popup') 
 const buttonPopup = document.querySelector('.button-popup') 
 
+
+//enable and disable button
 
 input.addEventListener('input', () => {
         
@@ -26,7 +17,39 @@ input.addEventListener('input', () => {
     }
 })
 
+
+//prevent special characters
+
+input.addEventListener("keypress", (e) => {
+    if(!checkChar(e)) {
+      e.preventDefault()
+    }
+})
+
+const checkChar = (e) => {
+
+    let char = String.fromCharCode(e.keyCode)
+  
+    let pattern = '[a-zA-Z0-9]'
+
+    if (char.match(pattern)) {
+      return true;
+    }
+}
+
+
+//github API
+
 buttonCard.addEventListener('click', () => {
+
+    const nameUser = document.querySelector('.name-user') 
+    const profileImage = document.querySelector('.img-user') 
+
+    const followers = document.querySelector('.followers') 
+    const following = document.querySelector('.following') 
+    const repository = document.querySelector('.repository') 
+    const company = document.querySelector('.company') 
+    const place = document.querySelector('.location') 
 
     let user = input.value
     const url = `https://api.github.com/users/${user}`
@@ -54,6 +77,9 @@ buttonCard.addEventListener('click', () => {
         })
 })
 
+
+//close popup
+
 buttonPopup.addEventListener('click', () => {
     popup.style.display = 'none'
     document.documentElement.style.overflow = 'auto';
@@ -68,7 +94,6 @@ const data = document.querySelector('.datas')
 const imgUser = document.querySelector('.img-user')
 
 //background
-
 const purple = document.querySelector('.purple')
 const pink = document.querySelector('.pink')
 const blue = document.querySelector('.blue')
@@ -103,7 +128,6 @@ original.addEventListener('click', () => {
 })
 
 //color-text
-
 const white = document.querySelector('.white')
 const black = document.querySelector('.black')
 
