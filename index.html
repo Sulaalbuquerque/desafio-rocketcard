@@ -11,104 +11,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3>Compartilhe seu #rocketcard</h3>
+    <div class="content-body">
+        <h3>Compartilhe seu #rocketcard</h3>
 
-    <main>
-        <div class="card">
-            
-            <div id="my-card" class="card-content">
-                <div class="name-user-container">
-                    <img src="./assets/logo.svg" alt="Logomarca">
-                    <span class="name-user">Sulaalbuquerque</span>
-                </div>
-
-                <div class="main">
-                    <div class="user">
-                        <img class="img-user"
-                            src="https://avatars.githubusercontent.com/u/77463176?v=4" 
-                            alt="Imagem do usuário"
-                        >
+        <main>
+            <div class="card">
+                
+                <div id="my-card" class="card-content">
+                    <div class="name-user-container">
+                        <img src="./assets/logo.svg" alt="Logomarca">
+                        <span class="name-user">Sulaalbuquerque</span>
                     </div>
 
-                    <div class="datas">
-                        <ul>
-                            <li class="data followers">
-                                <img src="./assets//followers.svg">
-                                <span>Seguidores</span>
-                            </li>
-                            <li class="data following">
-                                <img src="./assets/following.svg">
-                                <span>Seguindo</span>
-                            </li>
-                            <li class="data repository">
-                                <img src="./assets/repository.svg">
-                                <span>Repositórios</span>
-                            </li>
-                            <li class="data company">
-                                <img src="./assets/company.svg">
-                                <span>Company</span>
-                            </li>
-                            <li class="data location">
-                                <img src="./assets/location.svg">
-                                <span>Location</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <div class="main">
+                        <div class="user">
+                            <img class="img-user"
+                                src="https://avatars.githubusercontent.com/u/77463176?v=4" 
+                                alt="Imagem do usuário"
+                            >
+                        </div>
 
-                <div class="footer">
-                    <img src="./assets/logo.svg" alt="Logomarca">
-                    <span>ROCKETCARD</span>
+                        <div class="datas">
+                            <ul>
+                                <li class="data followers">
+                                    <img src="./assets//followers.svg">
+                                    <span>Seguidores</span>
+                                </li>
+                                <li class="data following">
+                                    <img src="./assets/following.svg">
+                                    <span>Seguindo</span>
+                                </li>
+                                <li class="data repository">
+                                    <img src="./assets/repository.svg">
+                                    <span>Repositórios</span>
+                                </li>
+                                <li class="data company">
+                                    <img src="./assets/company.svg">
+                                    <span>Company</span>
+                                </li>
+                                <li class="data location">
+                                    <img src="./assets/location.svg">
+                                    <span>Location</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <img src="./assets/logo.svg" alt="Logomarca">
+                        <span>ROCKETCARD</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="controls">
+                <div class="data-user">
+                    <label for="">Digite o seu </label>
+                    <input 
+                        class="input"
+                        type="text" 
+                        placeholder="nome de usuário"
+                    >
+                    <button 
+                        disabled
+                        type="submit" 
+                        class="button-card"
+                    >
+                        Gerar meu card
+                    </button>
+                </div>
+
+                <div class="customization">
+                    <p class="title">Customizar Rocketcard</p>
+                    <div class="background">
+                        <p>Cor de fundo</p>
+                        <div class="colors">
+                            <button class="purple"></button>
+                            <button class="pink"></button>
+                            <button class="blue"></button>
+                            <button class="green"></button>
+                            <button class="original"></button>
+                        </div>
+                        
+                    </div>
+                    <div class="color-text">
+                        <p>Cor do texto</p>
+                        <div class="colors">
+                            <button class="white"></button>
+                            <button class="black"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="download">
+                    <p>Baixar meu card</p>
+                    <button id="button-download">Download pdf</button>
+                </div> -->
+            </div>
+        </main>
+    </div>
+
+    <div class="popup">
+        <div class="content-popup">
+            <p>Nome de usuário não encontrado.</p>
+            <p>Por favor, insira um nome de usuário válido.</p>
+            <button class="button-popup">Ok</button>
         </div>
-
-        <div class="controls">
-            <div class="data-user">
-                <label for="">Digite o seu </label>
-                <input 
-                    class="input"
-                    type="text" 
-                    placeholder="nome de usuário"
-                >
-                <button 
-                    disabled
-                    type="submit" 
-                    class="button-card"
-                >
-                    Gerar meu card
-                </button>
-            </div>
-
-            <div class="customization">
-                <p class="title">Customizar Rocketcard</p>
-                <div class="background">
-                    <p>Cor de fundo</p>
-                    <div class="colors">
-                        <button class="purple"></button>
-                        <button class="pink"></button>
-                        <button class="blue"></button>
-                        <button class="green"></button>
-                        <button class="original"></button>
-                    </div>
-                    
-                </div>
-                <div class="color-text">
-                    <p>Cor do texto</p>
-                    <div class="colors">
-                        <button class="white"></button>
-                        <button class="black"></button>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- <div class="download">
-                <p>Baixar meu card</p>
-                <button id="button-download">Download pdf</button>
-            </div> -->
-        </div>
-    </main>
+    </div>
 
     <script src="./scripts/script.js"></script>
 </body>

@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
-    //-webkit-print-color-adjust: exact;
 }
 
 :root {
     --bg: #1C1C1C;
     --bg-card: #0E1218;
+    --bg-popup: rgba(0, 0, 0, .8);
     --text: #F1F1F1;
     --img-profile: #8257e5;
     --buttons: #FFF;
@@ -26,13 +26,25 @@
 }
 
 body{
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--bg-card);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--img-profile);
+}
+
+.content-body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    background-color: var(--bg);
-    color: var(--text);
     min-height: 100vh;
 }
 
@@ -108,8 +120,6 @@ h3{
 }
 
 .data{
-    //color: #000;
-
     display: flex;
     align-items: center;
     gap: .4rem;
@@ -148,31 +158,29 @@ h3{
     background-color: var(--bg);
 }
 
-
-
 .data-user input,
-.data-user button{
+.data-user button,
+.button-popup{
     border: none;
     border-radius: .5rem;
-
 }
 
 .data-user input{
     padding: .7rem;
 }
 
-.data-user button{
+.data-user button,
+.button-popup{
     padding: .5rem 1rem;
     cursor: pointer;
     background-color: var(--img-profile);
     color: var(--text);
-
 }
 
-.data-user button:hover{
+.data-user button:hover,
+.button-popup:hover{
     background-color: var(--text);
     color: var(--img-profile);
-
 }
 
 .data-user button:disabled{
@@ -255,6 +263,36 @@ h3{
 
 .black{
     background-color: var(--black);
+}
+
+.popup{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-popup);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    background-color: var(--bg);
+    border: solid .1rem var(--img-profile);
+    border-radius: 2.3rem;
+    padding: 3rem;
+}
+
+.button-popup{
+    margin-top: 1.5rem;
 }
 
 

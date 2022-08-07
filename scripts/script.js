@@ -11,6 +11,9 @@ const place = document.querySelector('.location')
 
 const buttonCard = document.querySelector('.button-card') 
 const input = document.querySelector('.input') 
+const popup = document.querySelector('.popup') 
+const buttonPopup = document.querySelector('.button-popup') 
+
 
 input.addEventListener('input', () => {
         
@@ -31,14 +34,31 @@ buttonCard.addEventListener('click', () => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            nameUser.textContent = data.login
-            profileImage.src = data.avatar_url
-            followers.textContent = `${data.followers} Seguidores`
-            following.textContent = `${data.following} Seguindo`
-            repository.textContent = `${data.public_repos} Repositórios`
-            company.textContent = data.company
-            place.textContent = data.location
+
+            if (data.message !== 'Not Found'){
+                nameUser.textContent = data.login
+                profileImage.src = data.avatar_url
+                followers.textContent = `${data.followers} Seguidores`
+                following.textContent = `${data.following} Seguindo`
+                repository.textContent = `${data.public_repos} Repositórios`
+                company.textContent = data.company
+                place.textContent = data.location
+            } else {
+                popup.style.display = 'flex'
+                document.documentElement.style.overflow = 'hidden';
+            }
+            
+    
+            
+
         })
+        
+})
+
+buttonPopup.addEventListener('click', () => {
+    popup.style.display = 'none'
+    document.documentElement.style.overflow = 'auto';
+    input.focus()
 })
 
 
