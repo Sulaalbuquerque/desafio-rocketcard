@@ -44,15 +44,14 @@ buttonCard.addEventListener('click', () => {
                 company.textContent = data.company
                 place.textContent = data.location
             } else {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth"
+                })
                 popup.style.display = 'flex'
                 document.documentElement.style.overflow = 'hidden';
             }
-            
-    
-            
-
         })
-        
 })
 
 buttonPopup.addEventListener('click', () => {
