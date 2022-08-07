@@ -3,20 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Prompt', sans-serif;
+    //-webkit-print-color-adjust: exact;
 }
 
 :root {
-    --bg: #000000;
+    --bg: #1C1C1C;
     --bg-card: #0E1218;
     --text: #F1F1F1;
     --img-profile: #8257e5;
     --buttons: #FFF;
     --border-button: #1A1A1A;
-
     --purple: #483D8B;
-    --blue: #3855B3;
-    --pink: #AD53A9 ;
-    --green: #367335;
+    --purple-dark: #3C0B61;
+    --blue: #3E4AA7;
+    --blue-dark: #2737A8;
+    --pink: #BC8F8F ;
+    --pink-dark: #7D587E;
+    --green: #556B2F;
+    --green-dark: #3D623A ;
+    --white: var(--text);
+    --black: #000000;
 }
 
 body{
@@ -37,9 +43,9 @@ main{
     justify-content: center;
 }
 
-.card h3{
+h3{
     font-weight: 400;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .card-content{
@@ -96,7 +102,14 @@ main{
     margin-left: 1rem;
 }
 
+.datas:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 .data{
+    //color: #000;
+
     display: flex;
     align-items: center;
     gap: .4rem;
@@ -116,15 +129,14 @@ main{
 }
 
 .controls{
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .data-user,
-.customization,
-.download{
+.customization{
     border: solid .1rem var(--img-profile);
     border-radius: 1.5rem;
     padding: 2rem;
@@ -137,8 +149,7 @@ main{
 }
 
 .data-user input,
-.data-user button,
-.download button{
+.data-user button{
     border: none;
     border-radius: .5rem;
 }
@@ -147,10 +158,13 @@ main{
     padding: .7rem;
 }
 
-.data-user button,
-.download button{
+.data-user button{
     padding: .5rem 1rem;
     cursor: pointer;
+}
+
+.customization .title{
+    margin-bottom: 1rem;
 }
 
 .customization button{
@@ -165,10 +179,41 @@ main{
     transition: .5s;
 }
 
+.background{
+    //border: solid .1rem var(--img-profile);
+    //border-radius: 1.5rem;
+    //padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    //box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
+    //background-color: var(--bg);
+}
+
+.color-text{
+    //border: solid .1rem var(--img-profile);
+    //border-radius: 1.5rem;
+    //padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    //box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
+    //background-color: var(--bg);
+}
+
+/* .download button{
+    background-color: var(--text);
+    color: var(--bg);
+    font-size: .9rem;
+
+}
+
 .download button:hover{
     background-color: var(--img-profile);
     color: var(--text);
-}
+} */
 
 .colors{
     display: flex;
@@ -191,8 +236,16 @@ main{
     background-color: var(--purple);
 }
 
-.black{
+.original{
     background-color: var(--bg-card);
+}
+
+.white{
+    background-color: var(--text);
+}
+
+.black{
+    background-color: var(--black);
 }
 
 .data-user button:hover{
@@ -203,6 +256,30 @@ main{
 @media (min-width: 750px) {  
     body main{
         flex-direction: row;
+    }
+
+    .controls{
+        padding: 2rem;
+    }
+
+    /* .data-user:hover{
+        transform: scale(1.1);
+        transition: .5s;
+    } */
+
+    .background,
+    .color-text{
+        padding: 1rem;
+    }
+
+    .background:hover{
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .color-text:hover{
+        transform: scale(1.1);
+        transition: .5s;
     }
 }
 

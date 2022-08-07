@@ -33,38 +33,59 @@ buttonCard.addEventListener('click', () => {
 
 //customization
 
+const card = document.querySelector('.card-content')
+const data = document.querySelector('.datas')
+const imgUser = document.querySelector('.img-user')
+
+//background
+
 const purple = document.querySelector('.purple')
 const pink = document.querySelector('.pink')
 const blue = document.querySelector('.blue')
 const green = document.querySelector('.green')
-const black = document.querySelector('.black')
-
-const card = document.querySelector('.card-content')
+const original = document.querySelector('.original')
 
 purple.addEventListener('click', () => {
     card.style.backgroundColor = 'var(--purple)'
+    imgUser.style.border = 'solid .4rem var(--purple-dark)'
 })
 
 blue.addEventListener('click', () => {
     card.style.backgroundColor = 'var(--blue)'
+    imgUser.style.border = 'solid .4rem var(--blue-dark)'
 })
 
 pink.addEventListener('click', () => {
     card.style.backgroundColor = 'var(--pink)'
+    imgUser.style.border = 'solid .4rem var(--pink-dark)'
 })
 
 green.addEventListener('click', () => {
     card.style.backgroundColor = 'var(--green)'
+    imgUser.style.border = 'solid .4rem var(--green-dark)'
+})
+
+original.addEventListener('click', () => {
+    card.style.backgroundColor = 'var(--bg-card)'
+    imgUser.style.border = 'solid .4rem var(--img-profile)'
+    card.style.color = 'var(--text)'
+    data.style.backgroundImage = 'linear-gradient(black, transparent, black)'
+})
+
+//color-text
+
+const white = document.querySelector('.white')
+const black = document.querySelector('.black')
+
+white.addEventListener('click', () => {
+    card.style.color = 'var(--text)'
+    data.style.backgroundImage = 'linear-gradient(black, transparent, black)'
 })
 
 black.addEventListener('click', () => {
-    card.style.backgroundColor = 'var(--bg-card)'
+    card.style.color = 'var(--black)'
+    data.style.backgroundImage = 'linear-gradient(#A9A9A9, transparent, #A9A9A9)'
 })
-
-
-//download
-
-
 
 
 

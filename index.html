@@ -12,11 +12,11 @@
 </head>
 <body>
     <h3>Compartilhe seu #rocketcard</h3>
-    
+
     <main>
         <div class="card">
             
-            <div class="card-content">
+            <div id="my-card" class="card-content">
                 <div class="name-user-container">
                     <img src="./assets/logo.svg" alt="Logomarca">
                     <span class="name-user">Sulaalbuquerque</span>
@@ -71,28 +71,38 @@
                     type="text" 
                     placeholder="nome de usuário"
                 >
-                <button class="button-card">Gerar meu card</button>
+                <button type="submit" class="button-card">Gerar meu card</button>
             </div>
 
             <div class="customization">
-                <p>Customizar Rocketcard</p>
-                <div class="colors">
-                    <button class="purple"></button>
-                    <button class="pink"></button>
-                    <button class="blue"></button>
-                    <button class="green"></button>
-                    <button class="black"></button>
+                <p class="title">Customizar Rocketcard</p>
+                <div class="background">
+                    <p>Cor de fundo</p>
+                    <div class="colors">
+                        <button class="purple"></button>
+                        <button class="pink"></button>
+                        <button class="blue"></button>
+                        <button class="green"></button>
+                        <button class="original"></button>
+                    </div>
+                </div>
+                <div class="color-text">
+                    <p>Cor do texto</p>
+                    <div class="colors">
+                        <button class="white"></button>
+                        <button class="black"></button>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="download">
+            <!-- <div class="download">
                 <p>Baixar meu card</p>
-                <button>Download pdf</button>
-            </div>
+                <button id="button-download">Download pdf</button>
+            </div> -->
         </div>
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
