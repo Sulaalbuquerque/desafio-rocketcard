@@ -148,10 +148,13 @@ h3{
     background-color: var(--bg);
 }
 
+
+
 .data-user input,
 .data-user button{
     border: none;
     border-radius: .5rem;
+
 }
 
 .data-user input{
@@ -161,6 +164,21 @@ h3{
 .data-user button{
     padding: .5rem 1rem;
     cursor: pointer;
+    background-color: var(--img-profile);
+    color: var(--text);
+
+}
+
+.data-user button:hover{
+    background-color: var(--text);
+    color: var(--img-profile);
+
+}
+
+.data-user button:disabled{
+    cursor: default;
+    opacity: 0.4;
+    pointer-events: none;
 }
 
 .customization .title{
@@ -180,27 +198,17 @@ h3{
 }
 
 .background{
-    //border: solid .1rem var(--img-profile);
-    //border-radius: 1.5rem;
-    //padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    //box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
-    //background-color: var(--bg);
 }
 
 .color-text{
-    //border: solid .1rem var(--img-profile);
-    //border-radius: 1.5rem;
-    //padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    //box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
-    //background-color: var(--bg);
 }
 
 /* .download button{
@@ -238,6 +246,7 @@ h3{
 
 .original{
     background-color: var(--bg-card);
+    position: relative;
 }
 
 .white{
@@ -248,10 +257,6 @@ h3{
     background-color: var(--black);
 }
 
-.data-user button:hover{
-    background-color: var(--img-profile);
-    color: var(--text);
-}
 
 @media (min-width: 750px) {  
     body main{
@@ -261,11 +266,6 @@ h3{
     .controls{
         padding: 2rem;
     }
-
-    /* .data-user:hover{
-        transform: scale(1.1);
-        transition: .5s;
-    } */
 
     .background,
     .color-text{

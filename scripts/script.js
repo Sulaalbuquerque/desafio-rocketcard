@@ -12,6 +12,17 @@ const place = document.querySelector('.location')
 const buttonCard = document.querySelector('.button-card') 
 const input = document.querySelector('.input') 
 
+input.addEventListener('input', () => {
+        
+    let inputValue = input.value
+
+    if (inputValue !== null || inputValue !== '') {
+        buttonCard.disabled = false
+    } if (inputValue === '') {
+        buttonCard.disabled = true
+    }
+})
+
 buttonCard.addEventListener('click', () => {
 
     let user = input.value
