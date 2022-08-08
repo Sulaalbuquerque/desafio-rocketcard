@@ -98,7 +98,7 @@ h3{
 .img-user{
     height: 17rem;
     border-radius: 50%;
-    border: solid .4rem var(--img-profile);
+    //border: solid .4rem var(--img-profile);
     position: relative;
     left: 4.5rem;
 }
