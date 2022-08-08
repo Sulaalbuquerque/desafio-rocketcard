@@ -66,13 +66,13 @@ h3{
     gap: 1rem;
     background-color: var(--bg-card);
     border-radius: 3rem;
-    width: 18rem;
+    width: 19rem;
     box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
 }
 
 .main{
     position: relative;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3.5rem 0;
 }
 
 .name-user-container{
@@ -98,7 +98,7 @@ h3{
     border-radius: 50%;
     border: solid .4rem var(--img-profile);
     position: relative;
-    left: 3.5rem;
+    left: 4.5rem;
 }
 
 .datas{
@@ -106,7 +106,6 @@ h3{
     flex-direction: column;
     gap: .3rem;
     padding: 1rem;
-    //width: 10rem;
     border-radius: 2.3rem;
     position: absolute;
     bottom: -2.5rem;
