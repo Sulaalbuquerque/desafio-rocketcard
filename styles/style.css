@@ -6,24 +6,26 @@
 }
 
 :root {
-    --bg: #1C1C1C;
-    --bg-card: #0E1218;
+    --bg: rgb(28, 28, 28);
+    --bg-card: rgb(14, 18, 24);
     --bg-popup: rgba(0, 0, 0, .8);
     --box-shadow: rgba(0, 0, 0, .4);
-    --text: #F1F1F1;
-    --img-profile: #8257e5;
-    --buttons: #FFF;
-    --border-button: #1A1A1A;
-    --purple: #483D8B;
-    --purple-dark: #3C0B61;
-    --blue: #3E4AA7;
-    --blue-dark: #2737A8;
-    --pink: #BC8F8F ;
-    --pink-dark: #7D587E;
-    --green: #556B2F;
-    --green-dark: #3D623A ;
+    --text: rgb(241, 241, 241);
+    --img-profile: rgb(130, 87, 229);
+    --buttons: rgb(255, 255, 255);
+    --border-button: rgb(26, 26, 26);
+
+    /* colors */
+    --purple: rgb(72, 61, 139);
+    --purple-dark: rgb(60, 11, 97);
+    --blue: rgb(62, 74, 167);
+    --blue-dark: rgb(39, 55, 168);
+    --pink: rgb(188, 143, 143);
+    --pink-dark: rgb(125, 88, 126);
+    --green:rgb(85, 107, 47);
+    --green-dark: rgb(61, 98, 58);
     --white: var(--text);
-    --black: #000000;
+    --black: rgb(0, 0, 0);
 }
 
 body{
@@ -49,16 +51,16 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
 }
 
+h3{
+    font-weight: 400;
+    padding: 1.5rem 0;
+}
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-h3{
-    font-weight: 400;
-    padding: 1.5rem 0;
 }
 
 .card-content{
@@ -70,11 +72,6 @@ h3{
     width: 19rem;
     box-shadow: .5rem .5rem .5rem .2rem var(--box-shadow);
     margin-bottom: 3rem;
-}
-
-.main{
-    position: relative;
-    margin: 2rem 0 3.5rem 0;
 }
 
 .name-user-container{
@@ -89,6 +86,11 @@ h3{
     border: solid .1rem var(--text);
     border-radius: 50%;
     padding: .3rem .4rem;
+}
+
+.main{
+    position: relative;
+    margin: 2rem 0 3.5rem 0;
 }
 
 .user{
@@ -159,15 +161,15 @@ h3{
     background-color: var(--bg);
 }
 
+.data-user input{
+    padding: .7rem;
+}
+
 .data-user input,
 .data-user button,
 .button-popup{
     border: none;
     border-radius: .5rem;
-}
-
-.data-user input{
-    padding: .7rem;
 }
 
 .data-user button,
