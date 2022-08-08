@@ -9,6 +9,7 @@
     --bg: #1C1C1C;
     --bg-card: #0E1218;
     --bg-popup: rgba(0, 0, 0, .8);
+    --box-shadow: rgba(0, 0, 0, .4);
     --text: #F1F1F1;
     --img-profile: #8257e5;
     --buttons: #FFF;
@@ -67,7 +68,8 @@ h3{
     background-color: var(--bg-card);
     border-radius: 3rem;
     width: 19rem;
-    box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
+    box-shadow: .5rem .5rem .5rem .2rem var(--box-shadow);
+    margin-bottom: 3rem;
 }
 
 .main{
@@ -153,7 +155,7 @@ h3{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    box-shadow: .5rem .5rem .5rem .2rem rgba(0, 0, 0, 0.4);
+    box-shadow: .5rem .5rem .5rem .2rem var(--box-shadow);
     background-color: var(--bg);
 }
 
@@ -296,6 +298,10 @@ h3{
 @media (min-width: 750px) {  
     body main{
         flex-direction: row;
+    }
+
+    .card-content{
+        margin-bottom: 1rem;
     }
 
     .controls{
