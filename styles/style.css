@@ -86,7 +86,7 @@ h3{
     height: 2.5rem;
     border: solid .1rem var(--text);
     border-radius: 50%;
-    padding: .3rem;
+    padding: .3rem .4rem;
 }
 
 .user{
@@ -104,9 +104,9 @@ h3{
 .datas{
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .3rem;
     padding: 1rem;
-    width: 10rem;
+    //width: 10rem;
     border-radius: 2.3rem;
     position: absolute;
     bottom: -2.5rem;
@@ -122,7 +122,7 @@ h3{
 .data{
     display: flex;
     align-items: center;
-    gap: .4rem;
+    gap: .7rem;
     overflow: hidden;
 }
 
