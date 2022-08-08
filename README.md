@@ -2,13 +2,14 @@
 
 <h1 align="center">
 <img width="800" src="assets/presentation/rocketcard.webp"/>
+<img width="800" src="assets/presentation/rocketcard-2.webp"/>
 <img width="800" src="assets/presentation/popup.webp">
 
 </h1>
 
 <h4 align="center">
     Acesse a aplicação online pelo 
-    <a href="https://desafio-rocketcard-mu.vercel.app/" target="_blank">link</a>.
+    <a href="https://desafio-rocketcard-mu.vercel.app/">link</a>.
 <h4>
 
 ##  Sobre
